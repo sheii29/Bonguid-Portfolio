@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #121212; 
+    color: #e0e0e0; 
+    scroll-behavior: smooth;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.9); 
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  #navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  #navbar ul li a {
+    text-decoration: none;
+    color: #90caf9;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #navbar ul li a:hover {
+    color: #42a5f5; 
+    transform: scale(1.1);
+  }
+  
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    width: 80%;
+    max-width: 1200px;
+    align-items: center;
+  }
+  
+  .image-section {
+    text-align: center;
+  }
+  
+  .image-section img {
+    width: 90%; 
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  #welcome-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    background: linear-gradient(135deg, #0d47a1, #1e88e5);
+    padding: 0 10%;
+    color: white;
+  }
+  
+  #welcome-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  #welcome-section h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    color: #42a5f5;
+  }
+  
+  #welcome-section p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.8;
+  }
+  
+  .circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #1565c0, #1e88e5);
+    z-index: -1;
+    top: 15%;
+    left: 5%;
+    opacity: 0.7;
+  }
+  
+  #projects {
+    background: #121212;
+    color: white;
+    padding: 60px 10%;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #90caf9;
+    text-transform: uppercase;
+  }
+  
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-tile {
+    background: #1a1a1a; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-tile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  .project-tile h3 {
+    background: #083270; 
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .project-tile a {
+    display: block;
+    padding: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #90caf9; 
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .project-tile a:hover {
+    color: #42a5f5; 
+    transform: translateX(5px);
+  }
+  
+  #contact {
+    padding: 60px 10%;
+    text-align: center;
+    background: linear-gradient(135deg, #0d47a1, #1e88e5);
+    color: white;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  #contact a {
+    display: inline-block;
+    background: #90caf9;
+    color: #121212;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  #contact a:hover {
+    background: #42a5f5;
+    transform: scale(1.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a0a0a;
+    color: #90caf9;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #42a5f5;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    #navbar ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .circle {
+      width: 150px;
+      height: 150px
+    }
